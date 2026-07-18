@@ -1,0 +1,16 @@
+configuration:
+  exchange_public_key:
+    name: Exchange public key
+    description: Read-only API public key.
+  exchange_secret_key:
+    name: Exchange secret key
+    description: Read-only API secret. Never grant trading or withdrawal permissions.
+  coingecko_demo_api_key:
+    name: CoinGecko demo API key
+    description: Optional key for satellite asset prices and icons.
+  price_refresh_minutes:
+    name: Public price refresh (minutes)
+  account_sync_hours:
+    name: Account sync (hours)
+  timezone:
+    name: Timezone
