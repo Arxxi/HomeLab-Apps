@@ -1,0 +1,33 @@
+name: Portfolio Dashboard
+version: "0.1.0"
+slug: portfolio_dashboard
+description: Private personal portfolio analytics dashboard.
+url: https://github.com/Arxxi/HomeLab-Apps/tree/main/portfolio-dashboard
+arch:
+  - aarch64
+startup: application
+boot: auto
+init: false
+image: ghcr.io/arxxi/home-portfolio-dashboard-addon
+ingress: true
+ingress_port: 8099
+ingress_stream: true
+panel_icon: mdi:chart-line
+panel_title: Portfolio
+panel_admin: true
+backup: cold
+stage: stable
+options:
+  exchange_public_key: ""
+  exchange_secret_key: ""
+  coingecko_demo_api_key: ""
+  price_refresh_minutes: 60
+  account_sync_hours: 24
+  timezone: Europe/Kyiv
+schema:
+  exchange_public_key: password
+  exchange_secret_key: password
+  coingecko_demo_api_key: password?
+  price_refresh_minutes: int(15,)
+  account_sync_hours: int(6,)
+  timezone: str
