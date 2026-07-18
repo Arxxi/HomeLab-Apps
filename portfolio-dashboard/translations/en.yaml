@@ -14,3 +14,4 @@ configuration:
     name: Account sync (hours)
   timezone:
     name: Timezone
+

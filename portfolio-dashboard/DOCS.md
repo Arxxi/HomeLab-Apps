@@ -36,3 +36,4 @@ and excludes it from current-value and profit/loss totals rather than using a mi
 Home Assistant cold backups include the persistent `/data` directory. Updates replace the app
 container but retain that directory. Keep normal Home Assistant backups before importing or
 rebuilding a large history.
+
